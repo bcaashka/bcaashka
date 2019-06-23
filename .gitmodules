@@ -1,0 +1,3 @@
+[submodule "themes/hesti"]
+	path = themes/hesti
+	url = https://github.com/pods13/hesti.git
