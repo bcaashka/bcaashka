@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"hugo serve \" \"gulp -f themes/hesti/gulpfile.js\"",
+    "build": "gulp -f themes/hesti/gulpfile.js build:site"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,20 @@
   },
   "homepage": "https://github.com/bcaashka/bcaashka#readme",
   "dependencies": {
+    "concurrently": "^4.1.0",
     "gulp": "^4.0.2"
+  },
+  "gulpSettings": {
+    "jsSources": {
+      "base": [
+        "index.js",
+        "lazysizes.js"
+      ]
+    },
+    "styleSources": {
+      "base": [
+        "hesti.scss"
+      ]
+    }
   }
 }
