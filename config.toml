@@ -1,19 +1,33 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://warframeblog.com/"
 languageCode = "en-us"
-title = "Hesti Blog"
+title = "bcaashka"
 theme = "hesti"
+paginate = 10
 enableRobotsTXT = true
-summarylength = 10
+DefaultContentLanguage = "en"
+googleAnalytics = ""
 canonifyURLs = true
-paginate = 1
+enableInlineShortcodes = true
+[social]
+    twitter = ""
+    facebook = ""
 [params]
-    image = "/images/hesti-header.jpg"
+    favicon = "favicon.ico"
+    title = ""
+    description = ""
+    seoTitle = ""
+    googleAdsense = ""
+    image = ""
+    locale = "en_US"
     thumbnail = "/assets/images/default-thumbnail.jpg"
-    logo = "static/logo.svg"
 [taxonomies]
     category = "categories"
 [permalinks]
     categories = "/:slug/"
+[sitemap]
+    changefreq = "daily"
+    filename = "sitemap.xml"
+    priority = 0.5
 [related]
     [[related.indices]]
         name  = "categories"
@@ -23,7 +37,7 @@ paginate = 1
         weight = 100
 [menu]
     [[menu.main]]
-        identifier = "categories"
-        name = "categories"
-        url = "#"
-        weight = 10
+        identifier = "guides"
+        name = "Guides"
+        url = "/guides/"
+        weight = 20
