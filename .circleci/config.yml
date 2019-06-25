@@ -24,7 +24,7 @@ jobs:
                 command: git submodule sync && git submodule update --init themes/hesti
             - run:
                 name: Install dependencies
-                command: npm i && cd themes/hesti && npm i
+                command: npm i
             - run:
                 name: Install Hugo
                 command: apk add hugo --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
