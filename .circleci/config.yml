@@ -15,7 +15,7 @@ jobs:
                 command: apk update && apk add openssh
             - add_ssh_keys:
                 fingerprint:
-                    - "33:6c:26:c8:08:b2:56:64:23:ba:4c:e5:45:5c:31:60"
+                    - "fa:bb:29:bb:e8:73:a1:41:53:ef:85:a3:e4:c1:c3:10"
             - run: git config --global user.email bot@bcaashka.com
             - run: git config --global user.name CircleCI
             - checkout
