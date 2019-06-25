@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/bcaashka/bcaashka/issues"
   },
-  "homepage": "https://github.com/bcaashka/bcaashka#readme",
+  "homepage": "https://bcaashka.github.io/bcaashka/",
   "dependencies": {
     "concurrently": "^4.1.0",
     "gulp": "^4.0.2",
