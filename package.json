@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"hugo serve \" \"npm run gulp\"",
+    "start": "concurrently \"npm run gulp\" \"hugo serve \"",
     "gulp": "gulp --cwd . -f themes/hesti/gulpfile.js",
     "build": "npm run gulp -- build:site",
     "publish": "npm run gulp -- publish:site"
