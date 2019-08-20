@@ -36,6 +36,10 @@
       "base": [
         "hesti.scss"
       ]
-    }
+    },
+    "htmlFilesToParseStyles": [
+      "/guides/**/*.html",
+      "/spring-framework-architecture/*.html"
+    ]
   }
 }
