@@ -1,1 +1,8 @@
 User-agent: *
+
+Host: https://bcaashka.com/
+ 
+Sitemap: https://bcaashka.com/sitemap.xml
+ 
+User-agent: ia_archiver
+Disallow: /
