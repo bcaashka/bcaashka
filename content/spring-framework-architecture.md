@@ -1,6 +1,6 @@
 ---
 title: Spring Framework Architecture
-seoTitle: Spring Framework Architecture
+seoTitle: Spring Framework Architecture. Spring Framework for Beginners.
 date: 2019-06-25T00:27:00+00:00
 author: bcaashka
 layout: post
@@ -9,9 +9,8 @@ categories:
   - Guides
 tags:
   - guides
-draft: true
 ---
-Hey guys. Today I am going to introduce you to Spring Framework and its Core functionality. 
+Hey guys. Today I am going to introduce you to Spring Framework and its Core functionality. <!--more-->
 
 ##Spring Framework – when did it appear and become popular? 
 It appeared in the good old days when EJB was dominating the world. It was a powerful monster used for developing corporate applications. Ideas upon which EJB is based are good, but for simple projects it was too inflexible to use it and launch in complex containers. 
