@@ -1,0 +1,3 @@
+[submodule "images/2019"]
+	path = images/2019
+	url = https://github.com/bcaashka/images2019.git
