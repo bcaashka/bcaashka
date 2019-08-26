@@ -2,3 +2,6 @@
 	path = themes/hesti
 	url = https://github.com/pods13/hesti.git
 	branch = v2
+[submodule "static/images/2019"]
+	path = static/images/2019
+	url = https://github.com/bcaashka/images2019.git
