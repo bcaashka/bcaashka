@@ -6,10 +6,19 @@
     <description>Recent content on bcaashka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jun 2019 00:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 22:27:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bcaashka.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Thread Pools in Java</title>
+      <link>https://bcaashka.com/introduction-to-thread-pools-in-java/</link>
+      <pubDate>Mon, 26 Aug 2019 22:27:00 +0000</pubDate>
+      
+      <guid>https://bcaashka.com/introduction-to-thread-pools-in-java/</guid>
+      <description>&lt;p&gt;In Java, it&amp;rsquo;s always been easy to run a method or piece of code asynchronous, that is if you have a &lt;code&gt;main&lt;/code&gt; method which has a main thread, you can run your task in a separate thread, and you can do this very quickly using a code similar to this.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Spring Framework Architecture</title>
