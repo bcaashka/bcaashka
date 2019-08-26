@@ -1,0 +1,45 @@
+version: 2
+
+jobs:
+    pull:
+        docker:
+            - image: node:10.15-alpine
+        working_directory: ~/bcaashka
+        steps:
+            - run:
+                name: Install OpenSSH
+                command: apk update && apk add openssh
+            - add_ssh_keys:
+                fingerprint:
+                    - "4d:bc:43:fc:36:51:1a:8c:4b:a9:2d:15:a6:8d:d8:34"
+            - run: git config --global user.email images@bcaashka.com
+            - run: git config --global user.name IMAGE_BOT
+            - checkout
+            - run:
+                name: Checkout submodules
+                command: git submodule sync && git submodule update --init --recursive
+            - run:
+                name: Pull new images
+                command: git submodule update --recursive --remote
+            - run:
+                name: Check for changes
+                command: |
+                    if [[ -z $(git status --porcelain) ]]; then
+                        echo "There are no changes to commit.";
+                        exit 0;
+                    fi
+            - run:
+                name: Submit changes
+                command: |
+                    git add --all
+                    git commit -m "Pull new images [ci skip]"
+                    git push origin gh-pages
+
+workflows:
+  version: 2
+  pull_images:
+    jobs:
+      - pull:
+          filters:
+            branches:
+              only: gh-pages
