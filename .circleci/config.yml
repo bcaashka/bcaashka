@@ -22,9 +22,6 @@ jobs:
                 name: Checkout submodules
                 command: git submodule sync && git submodule update --init --recursive
             - run:
-                name: Pull new images
-                command: git submodule update --recursive --remote
-            - run:
                 name: Check for changes
                 command: |
                     if [[ -z $(git status --porcelain) ]]; then
