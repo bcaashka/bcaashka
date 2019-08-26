@@ -12,6 +12,9 @@ jobs:
             - add_ssh_keys:
                 fingerprint:
                     - "4d:bc:43:fc:36:51:1a:8c:4b:a9:2d:15:a6:8d:d8:34"
+            - run:
+                name: Update git
+                command: apk update && apk add git
             - run: git config --global user.email images@bcaashka.com
             - run: git config --global user.name IMAGE_BOT
             - checkout
